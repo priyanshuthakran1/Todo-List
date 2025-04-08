@@ -1,0 +1,15 @@
+.about {
+    width: 100%;
+    min-height: 100vh; /* Ensures it covers the full viewport height */
+    box-sizing: border-box; /* Ensures padding and border are included in the height */
+}
+
+.about p {
+    text-align: justify;
+    text-justify: inter-word; /* Ensures better text justification */
+}
+
+.about h1 {
+    border-bottom: 1.5px solid #000; /* Adds a color to the border, replace #000 with your desired color */
+    padding: 5px;
+}

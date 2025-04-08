@@ -1,0 +1,62 @@
+.user-png{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.navbar-brand{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.btn-nav{
+    background-color: rgb(234, 99, 69);
+    border-radius: 10px ;
+    color: aliceblue !important;
+    font-weight: bold;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR40IE2GFWvOiaz-7mHJNAufbiRTS2IzjICg&s);
+
+
+}/* Navbar styles */
+.nvbr {
+    background-color: #343a40; /* Navbar background color */
+}
+
+.navbar {
+    padding: 10px 20px; /* Navbar padding */
+}
+
+.nav-link {
+    color: #ffffff !important; /* Navbar link color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav-link:hover {
+    color: #f8f9fa !important; /* Navbar link hover color */
+}
+
+.welcome-text {
+    color: #ffd700; /* Text color for welcome message */
+    font-weight: bold; /* Make it bold */
+    font-size: 1.1rem; /* Increase font size */
+    margin: 0 10px; /* Add margin for spacing */
+    padding: 5px 10px; /* Add padding for a better look */
+    border: 2px solid #ffd700; /* Gold border */
+    background-color: rgba(255, 215, 0, 0.1); /* Light gold background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button styles */
+.btn-nav {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 5px 10px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.btn-nav:hover {
+    background-color: #0056b3; /* Button hover background color */
+}
