@@ -1,15 +1,92 @@
 .about {
-    width: 100%;
-    min-height: 100vh; /* Ensures it covers the full viewport height */
-    box-sizing: border-box; /* Ensures padding and border are included in the height */
-}
-
-.about p {
-    text-align: justify;
-    text-justify: inter-word; /* Ensures better text justification */
+  width: 100%;
+  min-height: 100vh; /* Full viewport height */
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #4facfe, #c128f4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #fff;
 }
 
 .about h1 {
-    border-bottom: 1.5px solid #000; /* Adds a color to the border, replace #000 with your desired color */
-    padding: 5px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  border-bottom: 2px solid #ffe97f; /* Highlight border */
+  padding-bottom: 8px;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+  text-align: center;
+  opacity: 0;
 }
+
+.about p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+}
+
+/* Features grid */
+.features-grid {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  opacity: 0;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Closing thanks */
+.about-thanks {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffdd57;
+  text-align: center;
+  opacity: 0;
+}
+
+/* ---------------- Animations ---------------- */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Classes */
+.fade-down { animation: fadeDown 1s ease forwards; }
+.fade-in { animation: fadeIn 1.5s ease forwards; }
+.fade-up { animation: fadeUp 2s ease forwards; }
+
+/* Delays */
+.delay-1 { animation-delay: 0.5s; }
+.delay-2 { animation-delay: 1s; }
